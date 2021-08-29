@@ -1,11 +1,11 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Sun Aug 29 2021 23:02:05 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="612c07baf5fea6328933e358" data-wf-site="612bfedfaf9ad928c885df8f">
+<html data-wf-page="612c07c84009a48410186ac8" data-wf-site="612bfedfaf9ad928c885df8f">
 <head>
   <meta charset="utf-8">
-  <title>About</title>
-  <meta content="About" property="og:title">
-  <meta content="About" property="twitter:title">
+  <title>Contact</title>
+  <meta content="Contact" property="og:title">
+  <meta content="Contact" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -40,9 +40,30 @@
       </ul>
     </nav>
   </header>
-  <div class="wf-section">
-    <h1>About</h1>
-  </div>
+  <section id="contact-form" class="contact-form wf-section">
+    <div class="w-container">
+      <h2>Contact form</h2>
+      <p>This form uses grid for its layout. Adjust and reorganize the <strong>divs </strong>inside the <strong>Form Grid</strong> to fit 1 or 2 grid columns as needed.</p>
+      <div id="formInstructions" class="small-text"><em>Fields marked with an asterisk (*) are required.</em></div>
+      <div class="w-form">
+        <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form">
+          <div class="contact-form-grid">
+            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e6352f4-10186ac8"><label for="First-Name" id="contact-first-name">First name *</label><input type="text" class="w-input" maxlength="256" name="First-Name" data-name="First Name" id="First-Name" required=""></div>
+            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e6352f8-10186ac8"><label for="Last-Name" id="contact-last-name">Last name *</label><input type="text" class="w-input" maxlength="256" name="Last-Name" data-name="Last Name" id="Last-Name" required=""></div>
+            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e6352fc-10186ac8"><label for="Email" id="contact-email">Email *</label><input type="email" class="w-input" maxlength="256" name="Email" data-name="Email" id="Email" required=""></div>
+            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e635300-10186ac8"><label for="Contact-Phone-Number" id="contact-phone">Phone number</label><input type="tel" class="w-input" maxlength="256" name="Contact-Phone-Number" data-name="Contact Phone Number" id="Contact-Phone-Number"></div>
+            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e635304-10186ac8"><label for="Message" id="contact-message">Message</label><textarea data-name="Message" maxlength="5000" id="Message" name="Message" class="w-input"></textarea></div>
+          </div><input type="submit" value="Submit" data-wait="Please wait..." class="w-button">
+        </form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer id="footer" class="footer wf-section">
     <div class="w-container">
       <div class="footer-flex-container">

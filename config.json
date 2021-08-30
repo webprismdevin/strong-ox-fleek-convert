@@ -1,0 +1,80 @@
+{
+  "project": {
+    "src_path": "src",
+    "build_path": "dist",
+    "root_file_name": "index.html"
+  },
+  "links_replacements": [
+    {
+      "target": "\"about.html\"",
+      "replace_by": "\"/about\""
+    },
+    {
+      "target": "\"index.html\"",
+      "replace_by": "\"/\""
+    },
+    {
+      "target": "\"products.html\"",
+      "replace_by": "\"/products\""
+    },
+    {
+      "target": "\"consultations.html\"",
+      "replace_by": "\"/consultations\""
+    },
+    {
+      "target": "\"contact.html\"",
+      "replace_by": "\"/contact\""
+    }
+  ],
+  "file_links_replacement": [
+    {
+      "target": "\"css/",
+      "replace_by": "\"../css/"
+    },
+    {
+      "target": "images/",
+      "replace_by": "../images/"
+    },
+    {
+      "target": "\"js/",
+      "replace_by": "\"../js/"
+    }
+  ],
+  "transforms": [
+    {
+      "name": "about",
+      "filepath": "about.html",
+      "move_to_subfolder": true,
+      "apply_links_replacements": true,
+      "apply_file_links_replacements": true
+    },
+    {
+      "name": "index",
+      "filepath": "index.html",
+      "move_to_subfolder": false,
+      "apply_links_replacements": true,
+      "apply_file_links_replacements": false
+    },
+    {
+      "name": "consultations",
+      "filepath": "consultations.html",
+      "move_to_subfolder": true,
+      "apply_links_replacements": true,
+      "apply_file_links_replacements": true
+    },
+    {
+      "name": "contact",
+      "filepath": "contact.html",
+      "move_to_subfolder": true,
+      "apply_links_replacements": true,
+      "apply_file_links_replacements": true
+    },    
+    {
+      "name": "products",
+      "filepath": "products.html",
+      "move_to_subfolder": true,
+      "apply_links_replacements": true,
+      "apply_file_links_replacements": true
+    }
+  ]
+}

@@ -374,6 +374,18 @@ h1 {
   .footer-heading {
     margin-top: 20px;
   }
+
+  .flex-container.reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .feature-image-mask.reverse {
+    margin-left: 0px;
+  }
 }
 
 #w-node-f538bef6-8c11-9a00-dee5-4e3906dc9888-06dc9885 {

@@ -1,11 +1,11 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon Aug 30 2021 05:50:52 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="612c07c10ca5ae0ca180a824" data-wf-site="612bfedfaf9ad928c885df8f">
+<!--  Last Published: Mon Aug 30 2021 06:07:03 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="612c07c84009a48410186ac8" data-wf-site="612bfedfaf9ad928c885df8f">
 <head>
   <meta charset="utf-8">
-  <title>Consultations</title>
-  <meta content="Consultations" property="og:title">
-  <meta content="Consultations" property="twitter:title">
+  <title>Contact</title>
+  <meta content="Contact" property="og:title">
+  <meta content="Contact" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -31,18 +31,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <nav role="navigation" class="nav-menu w-nav-menu">
         <a href="index.html" class="nav-link w-nav-link">Home</a>
         <a href="products.html" class="nav-link w-nav-link">Products</a>
-        <a href="contact.html" class="nav-link w-nav-link">Contact</a>
+        <a href="contact.html" aria-current="page" class="nav-link w-nav-link w--current">Contact</a>
       </nav>
       <div class="menu-button w-nav-button">
         <div class="icon w-icon-nav-menu"></div>
       </div>
     </div>
   </div>
-  <div class="section-3 wf-section">
+  <section id="contact-form" class="contact-form wf-section">
     <div class="w-container">
-      <h1>Consultations</h1>
+      <h2>Contact form</h2>
+      <p>Have a question or comment? Reach out to us any time, and we&#x27;ll get back to you as soon as possible!</p>
+      <div id="formInstructions" class="small-text"><em>Fields marked with an asterisk (*) are required.</em></div>
+      <div class="w-form">
+        <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form">
+          <div class="contact-form-grid">
+            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e6352f4-10186ac8"><label for="First-Name" id="contact-first-name">First name *</label><input type="text" class="w-input" maxlength="256" name="First-Name" data-name="First Name" id="First-Name" required=""></div>
+            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e6352f8-10186ac8"><label for="Last-Name" id="contact-last-name">Last name *</label><input type="text" class="w-input" maxlength="256" name="Last-Name" data-name="Last Name" id="Last-Name" required=""></div>
+            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e6352fc-10186ac8"><label for="Email" id="contact-email">Email *</label><input type="email" class="w-input" maxlength="256" name="Email" data-name="Email" id="Email" required=""></div>
+            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e635300-10186ac8"><label for="Contact-Phone-Number" id="contact-phone">Phone number</label><input type="tel" class="w-input" maxlength="256" name="Contact-Phone-Number" data-name="Contact Phone Number" id="Contact-Phone-Number"></div>
+            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e635304-10186ac8"><label for="Message" id="contact-message">Message</label><textarea data-name="Message" maxlength="5000" id="Message" name="Message" class="w-input"></textarea></div>
+          </div><input type="submit" value="Submit" data-wait="Please wait..." class="main-button w-button">
+        </form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
   <footer id="footer" class="footer wf-section">
     <div class="w-container">
       <div class="footer-flex-container">

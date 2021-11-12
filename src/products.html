@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon Aug 30 2021 06:50:28 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Nov 12 2021 02:22:42 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="612c11d4426e8080e6525300" data-wf-site="612bfedfaf9ad928c885df8f">
 <head>
   <meta charset="utf-8">
@@ -23,20 +23,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WTGBG66');</script>
   <!--  End Google Tag Manager  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="https://sdks.shopifycdn.com/buy-button/1.0.0/buybutton.js"></script>
 </head>
 <body>
-  <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
+  <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
     <div class="container w-container">
-      <a href="index.html" class="brand w-nav-brand"><img src="images/strong_ox_grey_transparent.png" loading="lazy" sizes="(max-width: 479px) 71vw, (max-width: 767px) 290px, 300px" srcset="images/brandmark-design-8-p-500.png 500w, images/brandmark-design-8-p-800.png 800w, images/brandmark-design-8-p-1080.png 1080w, images/brandmark-design-8-p-1600.png 1600w, images/brandmark-design-8-p-2000.png 2000w, images/strong_ox_grey_transparent.png 2232w" alt=""></a>
-      <nav role="navigation" class="nav-menu w-nav-menu">
-        <a href="index.html" class="nav-link w-nav-link">Home</a>
-        <a href="products.html" aria-current="page" class="nav-link w-nav-link w--current">Products</a>
-        <a href="mailto:info@strongoxsupplements.com?subject=General%20Inquiry" class="nav-link w-nav-link">Contact</a>
-      </nav>
+      <div class="div-block-7">
+        <a href="index.html" class="brand w-nav-brand"><img src="images/strong_ox_grey_transparent.png" loading="lazy" sizes="(max-width: 479px) 240px, (max-width: 767px) 290px, 300px" srcset="images/brandmark-design-8-p-500.png 500w, images/brandmark-design-8-p-800.png 800w, images/brandmark-design-8-p-1080.png 1080w, images/brandmark-design-8-p-1600.png 1600w, images/brandmark-design-8-p-2000.png 2000w, images/strong_ox_grey_transparent.png 2232w" alt=""></a>
+      </div>
+      <div class="div-block-6">
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <a href="index.html" class="nav-link w-nav-link">Home</a>
+          <a href="products.html" aria-current="page" class="nav-link w-nav-link w--current">Products</a>
+          <a href="mailto:info@strongoxsupplements.com?subject=General%20Inquiry" class="nav-link w-nav-link">Contact</a>
+          <div class="carttoggle">
+            <div id="toggle2" class="div-block-5"></div>
+          </div>
+        </nav>
+      </div>
       <div class="menu-button w-nav-button">
         <div class="icon w-icon-nav-menu"></div>
       </div>
     </div>
+  </div>
+  <div class="section-7 wf-section">
+    <div class="container-3 w-container">
+      <h1>All Products<br></h1>
+      <p class="paragraph-2">Disclaimer: These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Selective Androgen Receptor Modulators (SARMs) have not been approved in the US by the FDA for human consumption as dietary supplements. These compounds are for research purposes only.</p>
+    </div>
+  </div>
+  <div class="section-6 wf-section">
+    <div id="collectionList"></div>
   </div>
   <div class="section-2 wf-section">
     <div class="container-2 w-container">
@@ -425,7 +443,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <h2 class="footer-heading">Spaces</h2>
           <ul role="list" class="footer-list w-list-unstyled">
             <li>
-              <a href="#" class="footer-link">Products</a>
+              <a href="index.html" class="footer-link">Home</a>
+            </li>
+            <li>
+              <a href="products.html" aria-current="page" class="footer-link w--current">Products</a>
             </li>
             <li>
               <a href="mailto:info@strongoxsupplements.com?subject=General%20Inquiry" class="footer-link">Contact Us</a>
@@ -442,5 +463,209 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!--  Google Tag Manager (noscript)  -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTGBG66" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!--  End Google Tag Manager (noscript)  -->
+  <script>
+  const client = ShopifyBuy.buildClient({
+    domain: 'strongox-supplements.myshopify.com',
+    storefrontAccessToken: '22c0a05958587edfe181b581bcc29a23'
+  });
+  var ui = ShopifyBuy.UI.init(client);
+</script>
+  <script>
+const button_styles = {
+    "background-color": "black",
+    ":hover": {
+        "background-color": "white",
+        "color": "black"
+    },
+    "border": "1px solid black"
+} 
+function createCart(){
+    ui.createComponent('cart', {
+        node: document.getElementById('toggle2')
+    })
+}
+function createUIComponent(id){
+    ui.createComponent('collection', {
+        id: id,
+        node: document.getElementById(id),
+        toggles: [
+            {
+                node: document.getElementById('toggle2'),
+            }
+        ],
+        options: {
+            productSet: {
+                iframe: true,
+                contents: {
+                    pagination: false,
+                },
+                templates: {
+                    products: '<div class="{{data.classes.productSet.products}}"></div>',
+                },
+                styles: {
+                    products: {
+                        display: 'flex',
+                        "flex-direction": 'column',
+                        "justify-content": 'space-around',
+                        "align-items": 'center',
+                        "@media (max-width: 600px)": {
+                            "flex-direction": 'column'
+                        }
+                    }
+                }
+            },
+            product: {
+                buttonDestination: 'modal',
+                isButton: true,
+                contents: {
+                    button: false
+                },
+                styles: {
+                    product: {
+                        width: 'auto'
+                    },
+                    img: {
+                        height: '300px',
+                        "min-width": '300px'
+                    },
+                    button: button_styles
+                }
+            },
+            cart: {
+                startOpen: false,
+                contents: {
+                    note: true
+                },
+                styles: {
+                    button: button_styles,
+                    close: {
+                        outline: 'none',
+                        border: 'none'
+                    }
+                }
+            },
+            modal: {
+                styles: {
+                    close: {
+                        outline: 'none',
+                        border: 'none'
+                    },
+                    overlay: {
+                        "background-color": "black",
+                        "transition": "background-color 200ms ease"
+                    }
+                }
+            },
+            modalProduct: {
+                contents: {
+                    imgWithCarousel: true,
+                    img: false,
+                },
+            },
+            toggle: {
+                iframe: true,
+                sticky: false,
+                templates: {
+                    count: '<div class="{{data.classes.toggle.count}}" data-element="toggle.count">{{# data.count > 0}}<span>{{data.count}}</span>{{/ data.count > 0}}</div>',
+                },
+                contents: {
+                    count: true,
+                    icon: true,
+                },
+                order: ['icon', 'count'],
+                styles: {
+                    toggle: {
+                        "background-color": "transparent",
+                        ":hover": {
+                            "background-color": 'white'
+                        },
+                        "height": 'auto'
+                    },
+                    iconPath: {
+                        "fill": "black",
+                    },
+                    count: {
+                        "margin-top": "8px",
+                        "margin-left": "4px"
+                    }
+                }
+            }
+        }
+    });
+}
+function parseId(id){
+    return atob(id).split("/")[4];
+}
+function createCollectionDivs(col){
+    console.log(col)
+        $("#collectionList").append(`<div class="collection-details-outer">
+                                        <div class="collection-details">
+                                            <h2 class="collection_title">${col.title}</h2>
+                                            <img class="collection_image" src="${col.image ? col.image.src : ''}" alt="${col.title} product collection image" width="200" height="200"/>
+                                        </div>
+                                        <div class="product-set-wrap" id="${parseId(col.id)}"></div>
+                                    </div>`);
+}
+function createCollections(col){
+    col.filter(c => c.handle !== 'frontpage').forEach(c => { 
+        let shortId = parseId(c.id)
+        $("#collectionList").append(createCollectionDivs(c));
+        createUIComponent(shortId);
+    })
+}
+client.collection.fetchAll().then((collections) => {
+    createCollections(collections);
+});
+</script>
+  <style>
+.cartToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+.collection_title {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 72px;
+    font-weight: 800;
+}
+.collection-details-outer {
+    display: flex;
+}
+.collection-details {
+    color: #4A4A4A;
+    font-family: "system-ui", -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 24px;
+    overflow: hidden;
+    position: sticky;
+    top: 80px;
+    height: 100vh;
+    min-width: 50%;
+}
+.collection_image {
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    width: calc(100vh - 80px);
+    height: auto;
+}
+.product-set-wrap {
+    padding: 80px 0px;
+}
+@media(max-width: 769px){
+    .collection-details-outer {
+        flex-direction: column;
+    }
+    .collection-details {
+        position: relative;
+        height: 30vh;
+        top: 0px;
+    }
+    .collection_image {
+        top: -30%;
+    }
+}
+</style>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon Aug 30 2021 06:50:28 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Nov 12 2021 02:22:42 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="612c07c84009a48410186ac8" data-wf-site="612bfedfaf9ad928c885df8f">
 <head>
   <meta charset="utf-8">
@@ -25,14 +25,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!--  End Google Tag Manager  -->
 </head>
 <body>
-  <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
+  <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
     <div class="container w-container">
-      <a href="index.html" class="brand w-nav-brand"><img src="images/strong_ox_grey_transparent.png" loading="lazy" sizes="(max-width: 479px) 71vw, (max-width: 767px) 290px, 300px" srcset="images/brandmark-design-8-p-500.png 500w, images/brandmark-design-8-p-800.png 800w, images/brandmark-design-8-p-1080.png 1080w, images/brandmark-design-8-p-1600.png 1600w, images/brandmark-design-8-p-2000.png 2000w, images/strong_ox_grey_transparent.png 2232w" alt=""></a>
-      <nav role="navigation" class="nav-menu w-nav-menu">
-        <a href="index.html" class="nav-link w-nav-link">Home</a>
-        <a href="products.html" class="nav-link w-nav-link">Products</a>
-        <a href="mailto:info@strongoxsupplements.com?subject=General%20Inquiry" class="nav-link w-nav-link">Contact</a>
-      </nav>
+      <div class="div-block-7">
+        <a href="index.html" class="brand w-nav-brand"><img src="images/strong_ox_grey_transparent.png" loading="lazy" sizes="(max-width: 479px) 240px, (max-width: 767px) 290px, 300px" srcset="images/brandmark-design-8-p-500.png 500w, images/brandmark-design-8-p-800.png 800w, images/brandmark-design-8-p-1080.png 1080w, images/brandmark-design-8-p-1600.png 1600w, images/brandmark-design-8-p-2000.png 2000w, images/strong_ox_grey_transparent.png 2232w" alt=""></a>
+      </div>
+      <div class="div-block-6">
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <a href="index.html" class="nav-link w-nav-link">Home</a>
+          <a href="products.html" class="nav-link w-nav-link">Products</a>
+          <a href="mailto:info@strongoxsupplements.com?subject=General%20Inquiry" class="nav-link w-nav-link">Contact</a>
+          <div class="carttoggle">
+            <div id="toggle2" class="div-block-5"></div>
+          </div>
+        </nav>
+      </div>
       <div class="menu-button w-nav-button">
         <div class="icon w-icon-nav-menu"></div>
       </div>
@@ -46,11 +53,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="w-form">
         <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form">
           <div class="contact-form-grid">
-            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e6352f4-10186ac8"><label for="First-Name" id="contact-first-name">First name *</label><input type="text" class="w-input" maxlength="256" name="First-Name" data-name="First Name" id="First-Name" required=""></div>
-            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e6352f8-10186ac8"><label for="Last-Name" id="contact-last-name">Last name *</label><input type="text" class="w-input" maxlength="256" name="Last-Name" data-name="Last Name" id="Last-Name" required=""></div>
-            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e6352fc-10186ac8"><label for="Email" id="contact-email">Email *</label><input type="email" class="w-input" maxlength="256" name="Email" data-name="Email" id="Email" required=""></div>
-            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e635300-10186ac8"><label for="Contact-Phone-Number" id="contact-phone">Phone number</label><input type="tel" class="w-input" maxlength="256" name="Contact-Phone-Number" data-name="Contact Phone Number" id="Contact-Phone-Number"></div>
-            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e635304-10186ac8"><label for="Message" id="contact-message">Message</label><textarea data-name="Message" maxlength="5000" id="Message" name="Message" class="w-input"></textarea></div>
+            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e6352f4-10186ac8"><label for="First-Name" id="contact-first-name">First name *</label><input type="text" class="w-input" maxlength="256" name="First-Name" data-name="First Name" placeholder="" id="First-Name" required=""></div>
+            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e6352f8-10186ac8"><label for="Last-Name" id="contact-last-name">Last name *</label><input type="text" class="w-input" maxlength="256" name="Last-Name" data-name="Last Name" placeholder="" id="Last-Name" required=""></div>
+            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e6352fc-10186ac8"><label for="Email" id="contact-email">Email *</label><input type="email" class="w-input" maxlength="256" name="Email" data-name="Email" placeholder="" id="Email" required=""></div>
+            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e635300-10186ac8"><label for="Contact-Phone-Number" id="contact-phone">Phone number</label><input type="tel" class="w-input" maxlength="256" name="Contact-Phone-Number" data-name="Contact Phone Number" placeholder="" id="Contact-Phone-Number"></div>
+            <div id="w-node-bd35c5d5-c438-ef17-b7fd-44256e635304-10186ac8"><label for="Message" id="contact-message">Message</label><textarea data-name="Message" maxlength="5000" id="Message" name="Message" placeholder="Example text" class="w-input"></textarea></div>
           </div><input type="submit" value="Submit" data-wait="Please wait..." class="main-button w-button">
         </form>
         <div class="w-form-done">
@@ -70,7 +77,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <h2 class="footer-heading">Spaces</h2>
           <ul role="list" class="footer-list w-list-unstyled">
             <li>
-              <a href="#" class="footer-link">Products</a>
+              <a href="index.html" class="footer-link">Home</a>
+            </li>
+            <li>
+              <a href="products.html" class="footer-link">Products</a>
             </li>
             <li>
               <a href="mailto:info@strongoxsupplements.com?subject=General%20Inquiry" class="footer-link">Contact Us</a>

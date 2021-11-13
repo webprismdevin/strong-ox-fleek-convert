@@ -34,7 +34,7 @@ h1 {
   -ms-flex-align: center;
   align-items: center;
   background-image: url('../images/steven-erixon-FxlYmu_To7o-unsplash-1.jpg');
-  background-position: 50% 55%;
+  background-position: 50% 50%;
   background-attachment: fixed;
   color: #fff;
 }
@@ -45,6 +45,10 @@ h1 {
   -ms-flex: 1;
   flex: 1;
   text-align: center;
+}
+
+.centered-container.white {
+  color: #fff;
 }
 
 .body {
@@ -123,6 +127,8 @@ h1 {
 .feature-section {
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: #000;
+  color: #fff;
 }
 
 .flex-container {
@@ -280,9 +286,17 @@ h1 {
   background-color: #fff;
 }
 
+.navbar.black {
+  background-color: #000;
+}
+
 .nav-link.w--current {
   color: #333;
   font-weight: 600;
+}
+
+.nav-link.rev {
+  color: #fff;
 }
 
 .footer-list {
@@ -290,7 +304,14 @@ h1 {
 }
 
 .main-button {
+  margin-top: 20px;
   background-color: #333;
+  color: #fff;
+}
+
+.main-button.flip {
+  background-color: #fff;
+  color: #333;
 }
 
 .white-button {
@@ -334,6 +355,8 @@ h1 {
 .section-5 {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #000;
+  color: #fff;
 }
 
 .carttoggle {
@@ -396,7 +419,46 @@ h1 {
 }
 
 .div-block-8 {
+  min-height: 700px;
   margin-top: 40px;
+}
+
+.rev {
+  background-color: #000;
+}
+
+.body-2 {
+  background-color: #000;
+}
+
+.div-block-9 {
+  min-height: 100vh;
+  padding-bottom: 140px;
+}
+
+.section-9 {
+  height: 300px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#000), color-stop(85%, hsla(0, 0%, 100%, 0))), url('../images/All-Products-Header.png');
+  background-image: linear-gradient(0deg, #000, hsla(0, 0%, 100%, 0) 85%), url('../images/All-Products-Header.png');
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, auto;
+  background-attachment: scroll, scroll;
+}
+
+.section-10 {
+  background-color: #000;
+}
+
+.div-block-10 {
+  width: 90%;
+  height: 2px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+}
+
+.paragraph-3 {
+  text-align: center;
 }
 
 @media screen and (max-width: 991px) {
@@ -547,6 +609,12 @@ h1 {
 
   .main-button {
     background-color: #333;
+  }
+
+  .section-9 {
+    height: 150px;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
   }
 }
 

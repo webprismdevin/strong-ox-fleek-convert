@@ -648,6 +648,22 @@ h1 {
     background-color: #333;
   }
 
+  .text-block {
+    margin-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .paragraph {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .section-5 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
   .div-block-7 {
     max-width: 200px;
   }
@@ -656,6 +672,10 @@ h1 {
     height: 150px;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
+  }
+
+  .heading-4 {
+    font-size: 32px;
   }
 
   .image {

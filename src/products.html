@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Sat Nov 13 2021 23:54:29 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sun Nov 14 2021 00:17:16 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="612c11d4426e8080e6525300" data-wf-site="612bfedfaf9ad928c885df8f">
 <head>
   <meta charset="utf-8">
@@ -35,7 +35,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar black w-nav">
     <div class="container w-container">
       <div class="div-block-7">
-        <a href="index.html" class="brand w-nav-brand"><img src="images/brandmark-design-11.png" loading="lazy" sizes="(max-width: 479px) 240px, (max-width: 767px) 290px, 300px" srcset="images/brandmark-design-11-p-500.png 500w, images/brandmark-design-11-p-800.png 800w, images/brandmark-design-11-p-1080.png 1080w, images/brandmark-design-11-p-1600.png 1600w, images/brandmark-design-11.png 2232w" alt=""></a>
+        <a href="index.html" class="brand w-nav-brand"><img src="images/brandmark-design-11.png" loading="lazy" sizes="(max-width: 479px) 200px, (max-width: 767px) 290px, 300px" srcset="images/brandmark-design-11-p-500.png 500w, images/brandmark-design-11-p-800.png 800w, images/brandmark-design-11-p-1080.png 1080w, images/brandmark-design-11-p-1600.png 1600w, images/brandmark-design-11.png 2232w" alt="" class="image"></a>
       </div>
       <div class="div-block-6">
         <nav role="navigation" class="nav-menu w-nav-menu">
@@ -55,7 +55,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="section-9 wf-section"></div>
   <div class="section-7 wf-section">
     <div class="container-3 w-container">
-      <h1>All Products<br></h1>
+      <h1 class="heading-5">All Products<br></h1>
       <p class="paragraph-3">Meet Strong Ox Supplements, a revolutionary line of healthy and effective supplements that will help you lose weight, get stronger, and feel confident every time you workout. With a carefully curated selection of products for your specific needs based on gender, goal, or plan, we are available to help find the right supplement for you.</p>
     </div>
   </div>
@@ -603,7 +603,7 @@ function createUIComponent(id){
                     toggle: {
                         "background-color": "transparent",
                         ":hover": {
-                            "background-color": 'white'
+                        		"background-color": "transparent",
                         },
                         "height": 'auto'
                     },
@@ -651,9 +651,10 @@ client.collection.fetchAll().then((collections) => {
 }
 .collection_title {
     color: white;
-    font-size: 2em;
+    font-size: 72px;
+    text-transform: uppercase;
     text-align: center;
-    margin-top: 72px;
+    margin-top: 92px;
     font-weight: 800;
 }
 .collection-details-outer {
@@ -682,6 +683,9 @@ client.collection.fetchAll().then((collections) => {
 @media(max-width: 769px){
     .collection-details-outer {
         flex-direction: column;
+    }
+    .collection-title {
+			font-size: 32px;
     }
     .collection-details {
         position: relative;

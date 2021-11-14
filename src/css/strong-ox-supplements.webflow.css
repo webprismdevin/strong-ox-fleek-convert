@@ -34,7 +34,7 @@ h1 {
   -ms-flex-align: center;
   align-items: center;
   background-image: url('../images/steven-erixon-FxlYmu_To7o-unsplash-1.jpg');
-  background-position: 50% 50%;
+  background-position: 50% 62%;
   background-attachment: fixed;
   color: #fff;
 }
@@ -323,10 +323,12 @@ h1 {
   margin-bottom: 60px;
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
+  text-align: left;
 }
 
 .paragraph {
+  margin-right: auto;
+  margin-left: auto;
   font-size: 16px;
   line-height: 24px;
 }
@@ -461,10 +463,29 @@ h1 {
   text-align: center;
 }
 
+.heading-4 {
+  font-size: 72px;
+  line-height: 1.5;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.heading-5 {
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 991px) {
   .footer {
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  .nav-menu {
+    background-color: #000;
+  }
+
+  .nav-link.rev {
+    border-bottom: 1px solid #fff;
   }
 
   .menu-button {
@@ -472,6 +493,10 @@ h1 {
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1;
+  }
+
+  .menu-button.w--open {
+    background-color: #000;
   }
 }
 
@@ -579,7 +604,11 @@ h1 {
   }
 
   .brand {
-    width: 250px;
+    width: auto;
+  }
+
+  .nav-menu {
+    background-color: #000;
   }
 
   .nav-link {
@@ -590,8 +619,16 @@ h1 {
     background-color: #fff;
   }
 
+  .nav-link.rev {
+    background-color: #000;
+  }
+
+  .nav-link.rev {
+    border-bottom: 1px solid #fff;
+  }
+
   .menu-button {
-    background-color: #fff;
+    background-color: transparent;
   }
 
   .menu-button.w--open {
@@ -599,7 +636,7 @@ h1 {
   }
 
   .icon {
-    color: #000;
+    color: #fff;
   }
 
   .container-2 {
@@ -611,10 +648,18 @@ h1 {
     background-color: #333;
   }
 
+  .div-block-7 {
+    max-width: 200px;
+  }
+
   .section-9 {
     height: 150px;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
+  }
+
+  .image {
+    max-width: 200px;
   }
 }
 
